@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cook It Your Way</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- header section start -->
+         <header>
+            <nav class="navbar">
+                <div class="logo">Recipe</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipe.html">Recipe</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+         </header>
+                  <!-- Image Carousel Section -->
+                  <section class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="carousel-item" controls>
+                            <source src="img/cake_pandan.mp4" type="video/mp4" alt="Recipe 1">
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/cake1.png" alt="Recipe 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/cake2.png" alt="Recipe 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/cake3.jpeg" alt="Recipe 4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-control-next" onclick="nextSlide()">&#10095;</button>
+                </section>
+         <main>
+            <h2>Cake Chiffon Pandan</h2>
+            <div>
+                <label for="quantity-cake">Quantity:</label>
+                <input type="number" id="quantity-cake" value="1" min="1">
+                <button onclick="adjustIngredients('cake')">Adjust Ingredients</button>
+            </div><br>
+            <h3>Ingredients:</h3><br>
+            <ul id="ingredient-list-cake" style="color: rgb(0, 86, 139); font-size: 18px;">
+                <li><b>100</b> gram of cake flour</li>
+                <li><b>20</b> gram of caster sugar</li>
+                <li><b>275</b> gram of eggs</li>
+                <li><b>2</b> gram of baking powder</li>
+                <li><b>100</b> gram of coconut milk</li>
+                <li><b>8</b> gram of olive oil</li>
+                <li><b>5</b> gram of pandan juice</li>
+            </ul>
+            <br><br>
+            <h3>Instructions:</h3><br>
+            <ol style="text-align: justify; font-size: 16px;">
+                <li>Preheat oven to 170C (338F).</li>
+                <li>Beat the egg yolks with a balloon whisk and mix in 20 grams of sugar. Add coconut milk, pandan juice, and a few drops of pandan paste (if desired). Combine well.</li>
+                <li>Sift in cake flour and baking powder in three batches into the egg yolk mixture. Mix well. Lastly, add olive oil. Set aside.</li>
+                <li>Use a large clean bowl, making sure there’s no water or oil in it. Beat the egg whites with an electric mixer until bubbles form. Add the cream of tartar. 
+                    After mixing well, add the 60 grams of sugar in three batches, about one-third at a time, and beat well between additions. 
+                    Continue to beat until stiff peaks form.</li>
+                <li>Spoon out 1/3 of the beaten egg whites and fold into the egg mixture. Lightly fold in the rest of the beaten egg whites with a spatula, until just combined.</li>
+                <li>Pour into the cake pan and bake in preheated oven for about 35 to 40 minutes. After baking the first 15 minutes, if you find your cake gets browning, reduce heat to 150C（300F）,
+                    continue to bake until cooked through. A needle comes out clean when inserted in the middle.</li>
+                <li>Remove cake from the oven. invert the pan immediately. Allow it to cool completely.</li>
+            </ol>
+        </main><br>
+        
+        <!-- Link to the external JavaScript file -->
+        <script src="script.js"></script>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.facebook.com/groups/756832418039671/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/trixtin/status/1735403628041765155?lang=ar" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/cookiesfordaaays/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/lovefromtheoven/cookie-recipes/" target="_blank"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <p>&copy; 2025 My Recipe Site</p>
+         </footer>
+    </body>
+</html>

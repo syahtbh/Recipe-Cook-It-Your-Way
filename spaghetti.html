@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cook It Your Way</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- header section start -->
+         <header>
+            <nav class="navbar">
+                <div class="logo">Recipe</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipe.html">Recipe</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+         </header>
+                  <!-- Image Carousel Section -->
+                  <section class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="carousel-item" controls>
+                            <source src="img/alla_carbonara.mp4" type="video/mp4" alt="Recipe 1">
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/spagh1.jpg" alt="Recipe 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/spagh2.jpg" alt="Recipe 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/spagh3.jpg" alt="Recipe 4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-control-next" onclick="nextSlide()">&#10095;</button>
+                </section>
+         <main>
+            <h2>Spaghetti Alla Carbonara</h2>
+            <div>
+                <label for="quantity-spaghetti">Quantity:</label>
+                <input type="number" id="quantity-spaghetti" value="1" min="1">
+                <button onclick="adjustIngredients('spaghetti')">Adjust Ingredients</button>
+            </div><br>
+            <h3>Ingredients:</h3><br>
+            <ul id="ingredient-list-spaghetti" style="color: rgb(0, 86, 139); font-size: 18px;">
+                <li><b>100</b> gram of thick round spaghetti</li>
+                <li><b>6</b> gram of meat</li>
+                <li><b>73</b> gram of eggs</li>
+                <li><b>30</b> gram of pecorino romano cheese</li>
+                <li><b>1</b> gram of black pepper</li>
+                <li><b>1</b> gram of salt</li>
+            </ul>
+            <br><br>
+            <h3>Instructions:</h3><br>
+            <ol style="text-align: justify; font-size: 16px;">
+                <li>Slice the meat into thin strips. In a large fry pan on medium-low heat, add the meat and cook until it's golden brown.</li>
+                <li>Remove the meat and place it onto a plate covered with a paper towel to rest. Save the rendered meat fat in the pan to cook with later.</li>
+                <li>In a large pot, boil water and add ½ tablespoon of rock salt. Then, add the spaghetti to the pot and cook for 13 minutes or follow your packet instructions.</li>
+                <li>Separate 3 egg yolks and place the yolks in a small bowl. Then, crack a whole egg, with the egg whites included, into the bowl with the egg yolks. 
+                    Beat the eggs together until combined and add freshly cracked black pepper and mix again.</li>
+                <li>Gradually add pecorino romano cheese to the eggs. Mix and continue to add the pecorino until you have a nice thick cream.</li>
+                <li>Put the pan back on medium-low heat with the meat oil. Using tongs, add the pasta to the pan and stir.</li>
+                <li>Scoop up a mug full of pasta water and add some right away to the pasta then mix it through.</li>
+                <li>Place your pot with the pasta water still inside on the stove and rest your pan on top of the pot. The steam will provide the heat to continue cooking the pasta.</li>
+                <li>Add a touch more pasta water, a handful of your crunchy meat, and the pecorino romano and egg cream. Mix everything and add more pasta water to help thicken the sauce.</li>
+                <li>Continue to add pasta water slowly until you can toss the pasta into the pan.</li>
+                <li>Plate the carbonara and top with pecorino cheese and the leftover sauce from the pan. Garnish with the remaining meat you didn't add to the sauce and a generous amount of freshly cracked pepper.</li>
+            </ol>
+        </main><br>
+        
+        <!-- Link to the external JavaScript file -->
+        <script src="script.js"></script>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.facebook.com/groups/756832418039671/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/trixtin/status/1735403628041765155?lang=ar" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/cookiesfordaaays/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/lovefromtheoven/cookie-recipes/" target="_blank"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <p>&copy; 2025 My Recipe Site</p>
+         </footer>
+    </body>
+</html>
